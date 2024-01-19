@@ -1,0 +1,158 @@
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  color: #333;
+  font: normal 14px monospace;
+  background-color: #cebbb3;
+  display: inline-block;
+
+  color: #755f56;
+}
+
+#container {
+  max-width: 1920px;
+  height: auto;
+  background-color: white;
+  margin: 0 auto;
+  box-shadow: 0 0 4px #999;
+}
+
+#headerSection {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  background-color: white;
+  background: url("../img/1-2.jpg") no-repeat center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+img {
+  max-width: 1920px;
+  width: 100%;
+  height: auto;
+}
+
+#menuSection {
+  display: inline-block;
+  margin: 0;
+  width: 100%;
+  height: 42px;
+  text-align: center;
+  background-color: white;
+  padding-left: 0px;
+  box-shadow: 0 0 1px #cebbb3;
+}
+#menuSection li {
+  width: 150px;
+  height: 42px;
+  display: inline-block;
+  list-style: none;
+  font: normal small-caps 40px monospace;
+  border-left: #cebbb3 1px solid;
+}
+
+#menuSection li:last-child {
+  border-right: #cebbb3 1px solid;
+}
+
+#menuSection a {
+  color: #333;
+  font: normal small-caps 20px monospace;
+  display: inline-block;
+  vertical-align: 42px;
+  height: 37px;
+  padding-top: 5px;
+  width: 159px;
+}
+
+#menuSection a:hover {
+  background: #cebbb3;
+  color: whitesmoke;
+}
+
+#mainSection {
+  width: auto;
+  height: auto;
+  margin: auto;
+  padding: 0 64px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.photoFrame {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  background: url("../img/1-2.jpg") center center;
+  background-size: auto 100%;
+  margin: 20px;
+  border-radius: 7px;
+  text-align: center;
+  box-shadow: 2px 2px 5px #999;
+}
+
+.photoFrame > a {
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+  color: #fff;
+  background-color: rgba(116, 116, 116, 0.445);
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.photoFrame > a:hover {
+  transition: 0.2s;
+  background-color: #cebbb3;
+  opacity: 1;
+}
+
+#collapse {
+  width: 100%;
+  max-width: inherit;
+  height: 500px;
+  text-align: center;
+  padding: 20px 0; 
+  /*background: linear-gradient(180deg, #fff 10%, #755f56 100%);
+  background: url("../img/3.png") center center;
+  background-size: auto 100%;*/
+
+  background-color: darkslategray;
+  /*gainsboro;*/
+}
+
+.item {
+  width: 300px;
+  height: 150px;
+  display: none;
+}
+
+.itemActive {
+  width: 500px;
+  height: 500px;
+  background-image: url("../img/slider/1.jpg");
+  background-size: cover;
+  display: inline-block;
+}
+
+#prev {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  background-color: #cebbb3;
+}
+
+#next {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  background-color: #cebbb3;
+}
